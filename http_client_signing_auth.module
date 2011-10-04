@@ -10,3 +10,14 @@
 function http_client_signing_auth($key, $secret) {
   return new HttpClientSigningAuth($key, $secret);
 }
+
+/**
+ * Implementation of hook_autoload_info().
+ *
+ * @return void
+ */
+function http_client_signing_auth_autoload_info() {
+  return array(
+    'HttpClientSigningAuth'                => array('file' => 'includes/HttpClientSigningAuth.inc'),
+  );
+}

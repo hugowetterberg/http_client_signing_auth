@@ -1,5 +1,4 @@
 name = HTTP Client Signing Auth
 description = Simple request signing for HTTP Client.
-core = 7.x
-
-files[] = includes/HttpClientSigningAuth.inc
+core = 6.x
+dependencies[] = autoload
