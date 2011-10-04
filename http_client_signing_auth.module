@@ -7,6 +7,6 @@
  * @param $secret
  * @return HttpClientSigningAuth
  */
-function signing_auth($key, $secret) {
+function http_client_signing_auth($key, $secret) {
   return new HttpClientSigningAuth($key, $secret);
 }
